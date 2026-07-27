@@ -243,6 +243,65 @@ export default function Home() {
               </div>
             </div>
 
+            {/* CARD PROJECT 3: Personal Website */}
+            <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
+              
+              <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
+                <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
+                  <ImageSlider images={taimg} />
+                </div>
+                <p className="text-[11px] font-mono text-zinc-500 text-center italic tracking-wide">
+                  * Capture Project.
+                </p>
+                
+                <div className="flex items-center justify-center gap-3 pt-1">
+                  <a 
+                    href="https://github.com/erzapranata/personal-website" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Lihat source code di Github"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-white/10 bg-white/5 text-xs font-mono text-zinc-300 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all duration-300 transform active:scale-95"
+                  >
+                    <span>Codebase</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                  </a>
+                  <a 
+                    href="https://youtube.com/link-demo-anda" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Lihat demo video di Youtube"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-purple-500/20 bg-purple-500/5 text-xs font-mono text-purple-300 hover:text-white hover:border-purple-500 hover:bg-purple-600 transition-all duration-300 transform active:scale-95"
+                  >
+                    <span>Demo Video</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex flex-col justify-between py-1 relative z-10 w-full">
+                <div>
+                  <div className="flex justify-between items-center text-xs font-mono text-purple-400">
+                    <span>Personal Website / Portofolio</span>
+                    <span className="text-zinc-500">2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
+                    Personal Website
+                  </h3>
+                  <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
+                    Project sederhana Membuat personal website yang responsive menggunakan Node.js, Next.js, Typescript, dan Tailwind CSS 
+                  </p>
+                </div>
+
+                <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
+                  <span className="hover:text-purple-300 transition-colors">Node.js</span> • <span className="hover:text-purple-300 transition-colors">Next.js</span> • <span className="hover:text-purple-300 transition-colors">Typescript</span> • <span className="hover:text-purple-300 transition-colors">Tailwind CSS</span> • <span className="hover:text-purple-300 transition-colors">Responsive Website</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
