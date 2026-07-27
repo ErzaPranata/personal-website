@@ -76,6 +76,7 @@ export default function Home() {
     "/projects/TA/ta13.jpg", "/projects/TA/ta14.jpg", "/projects/TA/ta15.jpg", 
     "/projects/TA/ta16.jpg", 
   ];
+  const pwimg = ["/projects/personal-website/Personal-Website.jpg"]
 
   return (
     <div className="ambient-glow min-h-screen bg-[#030303] text-zinc-100 selection:bg-brand-purple/30 scroll-smooth relative overflow-hidden">
@@ -248,7 +249,7 @@ export default function Home() {
               
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
-                  <ImageSlider images={taimg} />
+                  <ImageSlider images={pwimg} />
                 </div>
                 <p className="text-[11px] font-mono text-zinc-500 text-center italic tracking-wide">
                   * Capture Project.
