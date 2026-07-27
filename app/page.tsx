@@ -76,7 +76,7 @@ export default function Home() {
     "/projects/TA/ta13.jpg", "/projects/TA/ta14.jpg", "/projects/TA/ta15.jpg", 
     "/projects/TA/ta16.jpg", 
   ];
-  const pwimg = ["/projects/personal-website/Personal-Website.jpg"]
+  const pwimg = ["/projects/personal-website/PersonalWebsite.jpg"]
 
   return (
     <div className="ambient-glow min-h-screen bg-[#030303] text-zinc-100 selection:bg-brand-purple/30 scroll-smooth relative overflow-hidden">
