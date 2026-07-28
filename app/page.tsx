@@ -96,16 +96,13 @@ export default function Home() {
   return (
     <div className="ambient-glow min-h-screen bg-[#030303] text-zinc-100 selection:bg-brand-purple/30 scroll-smooth relative overflow-hidden">
       
-      {/* 1. KANVAS PARTIKEL SUTIL PENGISI BACKGROUND */}
       <BackgroundMatrixParticles />
 
-      {/* 2. PROGRESS BAR DI ATAS LAYAR */}
       <div 
         className="fixed top-0 left-0 h-[3px] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-violet-600 z-[9999] transition-all duration-100 ease-out"
         style={{ width: `${scrollProgress}%` }}
       />
 
-      {/* 3. CYBER TECH GRID LINES BACKGROUND PATTERN (MENYELURUH & FIXED) */}
       <div 
         className="fixed inset-0 opacity-[0.12] pointer-events-none z-0" 
         style={{

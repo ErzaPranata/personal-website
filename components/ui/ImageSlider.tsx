@@ -28,7 +28,6 @@ export default function ImageSlider({ images }: ImageSliderProps) {
       
       {/* RENDER GAMBAR DENGAN SKALA PENUH */}
       {images.map((img, index) => (
-        // eslint-disable-next-line @next/next/no-img-element
         <img
           key={img}
           src={img}
@@ -44,14 +43,13 @@ export default function ImageSlider({ images }: ImageSliderProps) {
       {/* Lapisan Vignette Halus pada Gambar */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 
-      {/* TOMBOL NAVIGASI MANUAL DENGAN PUSAT FLEX MUTLAK */}
+      {/* TOMBOL NAVIGASI MANUAL */}
       {images.length > 1 && (
         <>
           <button 
             onClick={prevSlide}
             className="absolute top-1/2 left-4 -translate-y-1/2 w-9 h-9 rounded-full bg-black/70 border border-white/10 text-white flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-all duration-300 hover:bg-purple-600 hover:border-purple-600 z-20 cursor-pointer text-xl select-none font-sans"
           >
-            {/* Menggunakan SVG untuk memastikan ikon panah tepat berada di tengah lingkaran */}
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>

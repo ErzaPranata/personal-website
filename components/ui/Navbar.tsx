@@ -22,7 +22,6 @@ export default function Navbar() {
       const element = document.getElementById(id);
       if (!element) return null;
 
-      // Konfigurasi deteksi: memicu callback ketika 30% area section terlihat di layar
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
@@ -39,7 +38,6 @@ export default function Navbar() {
       return { observer, element };
     });
 
-    // Bersihkan observer saat komponen dilepas (unmount) mencegah memory leak
     return () => {
       observers.forEach((obs) => {
         if (obs) obs.observer.unobserve(obs.element);

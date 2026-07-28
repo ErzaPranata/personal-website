@@ -34,8 +34,6 @@ export default function RotatingText() {
   }, [currentText, isDeleting, currentWordIndex, words]);
 
   return (
-    // 1. Mengubah leading-none menjadi leading-tight agar ada ruang vertikal yang cukup
-    // 2. Menambahkan pb-2 agar huruf 'g', 'y', 'p' tidak terpotong oleh clipping border
     <span className="inline-flex items-center select-none leading-tight pb-2">
       
       {/* Teks utama dengan gradasi warna */}
