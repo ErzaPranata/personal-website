@@ -85,12 +85,12 @@ export default function Home() {
     "/projects/App-POS-Cashier/DashboardLaporanKeuangan2.jpg",
     "/projects/App-POS-Cashier/DashboardKasir.jpg",
     "/projects/App-POS-Cashier/OpenShiftKasir.jpg",
-    "/projects/App-POS-Cashier/ContohInput",
+    "/projects/App-POS-Cashier/ContohInput.jpg",
     "/projects/App-POS-Cashier/Struk.jpg",
     "/projects/App-POS-Cashier/ReprintStruk.jpg",
     "/projects/App-POS-Cashier/TutupShiftKasir.jpg",
-    "/projects/App-POS-Cashier/LaporanEOD",
-    "/projects/App-POS-Cashier/LockLaci"
+    "/projects/App-POS-Cashier/LaporanEOD.jpg",
+    "/projects/App-POS-Cashier/LockLaci.jpg"
   ];
 
   return (
