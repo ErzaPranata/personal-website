@@ -139,7 +139,7 @@ export default function Home() {
 
           <div className="space-y-6">
             
-            {/* CARD PROJECT: App POS Cashier */}
+            {/* CARD PROJECT: Management Store APP */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
               
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
@@ -152,7 +152,7 @@ export default function Home() {
                 
                 <div className="flex items-center justify-center gap-3 pt-1">
                   <a 
-                    href="https://github.com/erzapranata/personal-website" 
+                    href="https://https://github.com/ErzaPranata/Management-Store-App" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat source code di Github"
