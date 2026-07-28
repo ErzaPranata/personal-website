@@ -144,7 +144,7 @@ export default function Home() {
               
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
-                  <ImageSlider images={pwimg} />
+                  <ImageSlider images={posimg} />
                 </div>
                 <p className="text-[11px] font-mono text-zinc-500 text-center italic tracking-wide">
                   * Capture Project.
