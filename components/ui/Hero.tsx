@@ -40,8 +40,8 @@ export default function Hero() {
         
         <div className="flex flex-wrap items-center gap-4 pt-2">
           <a 
-            href="/CV- Erza Pranata Ramadhan.pdf" 
-            download="CV_Erza_Pranata_Ramadhan.pdf"
+            href="/assets/CV-Erza.pdf" 
+            download="CV_Erza.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-purple-600 border border-purple-500 text-white text-sm font-medium hover:bg-purple-700 hover:shadow-lg hover:shadow-purple-600/20 transition-all group"
           >
             <span>Get Resume PDF</span>
@@ -74,7 +74,7 @@ export default function Hero() {
           {/* Main Photo Card */}
           <div className="relative w-full h-full rounded-2xl overflow-hidden border-[2px] border-[#030303] bg-[#0a0a0c] shadow-2xl">
             <img 
-              src="/PP.jpg"
+              src="/assets/PP.jpg"
               alt="Erza Pranata Ramadhan"
               className="w-full h-full object-cover object-center filter grayscale contrast-115 brightness-95 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-out scale-100 group-hover:scale-105"
             />

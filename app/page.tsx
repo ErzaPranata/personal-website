@@ -92,6 +92,16 @@ export default function Home() {
     "/projects/App-POS-Cashier/Laporan EOD.jpg",
     "/projects/App-POS-Cashier/LockLaci.jpg"
   ];
+  const rtimg = [
+    "/projects/Management-RT/rt1.jpg",
+    "/projects/Management-RT/rt2.jpg",
+    "/projects/Management-RT/rt3.jpg",
+    "/projects/Management-RT/rt4.jpg",
+    "/projects/Management-RT/rt5.jpg",
+    "/projects/Management-RT/rt6.jpg",
+    "/projects/Management-RT/rt7.jpg",
+    "/projects/Management-RT/rt8.jpg"
+  ]
 
   return (
     <div className="ambient-glow min-h-screen bg-[#030303] text-zinc-100 selection:bg-brand-purple/30 scroll-smooth relative overflow-hidden">
@@ -136,6 +146,65 @@ export default function Home() {
 
           <div className="space-y-6">
             
+            {/* CARD PROJECT: Core API Backend Rt */}
+            <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
+              
+              <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
+                <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
+                  <ImageSlider images={rtimg} />
+                </div>
+                <p className="text-[11px] font-mono text-zinc-500 text-center italic tracking-wide">
+                  * Capture Project.
+                </p>
+                
+                <div className="flex items-center justify-center gap-3 pt-1">
+                  <a 
+                    href="https://https://https://github.com/ErzaPranata/Core-API-backend-rt" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Lihat source code di Github"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-white/10 bg-white/5 text-xs font-mono text-zinc-300 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10 transition-all duration-300 transform active:scale-95"
+                  >
+                    <span>Codebase</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                  </a>
+                  <a 
+                    href="https://youtube.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Lihat demo video di Youtube"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-purple-500/20 bg-purple-500/5 text-xs font-mono text-purple-300 hover:text-white hover:border-purple-500 hover:bg-purple-600 transition-all duration-300 transform active:scale-95"
+                  >
+                    <span>Demo Video</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex flex-col justify-between py-1 relative z-10 w-full">
+                <div>
+                  <div className="flex justify-between items-center text-xs font-mono text-purple-400">
+                    <span>Personal Project</span>
+                    <span className="text-zinc-500">2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
+                    Management RT – Core Backend REST API Engine 
+                  </h3>
+                  <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
+                    Management RT Core API adalah backend RESTful API performa tinggi yang dirancang sebagai pusat kendali (brain engine) untuk digitalisasi operasional lingkungan RT. Sistem ini dibangun menggunakan arsitektur clean code NestJS yang scalable, type-safe, dan terstruktur rapi untuk menangani seluruh logika bisnis administrasi warga, manajemen keuangan, hingga pos keamanan lingkungan secara terpusat.
+                  </p>
+                </div>
+
+                <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
+                  <span className="hover:text-purple-300 transition-colors">NestJS</span> • <span className="hover:text-purple-300 transition-colors">TypeScript</span> • <span className="hover:text-purple-300 transition-colors">Prisma ORM</span> • <span className="hover:text-purple-300 transition-colors">PostgreSQL</span> • <span className="hover:text-purple-300 transition-colors">Tailwind CSS</span> • <span className="hover:text-purple-300 transition-colors">JWT & Passport</span>• <span className="hover:text-purple-300 transition-colors">Swagger / OpenAPI</span>
+                </div>
+              </div>
+            </div>
+
             {/* CARD PROJECT: Management Store APP */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
               
@@ -161,7 +230,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a 
-                    href="https://youtube.com/link-demo-anda" 
+                    href="https://youtube.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat demo video di Youtube"
@@ -182,7 +251,7 @@ export default function Home() {
                     <span className="text-zinc-500">2026</span>
                   </div>
                   <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
-                    App Management Store
+                    Management Store App 
                   </h3>
                   <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
                     Aplikasi ini adalah proyek pribadi saya yang rencananya akan saya gunakan di masa depan ketika saya sudah memiliki toko ritel sendiri. Aplikasi ini menggunakan berbagai alat seperti Tauri, React, TypeScript, JavaScript, Tailwind CSS, dan basis data SQLite. 
@@ -220,7 +289,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a 
-                    href="https://youtube.com/link-demo-anda" 
+                    href="https://youtube.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat demo video di Youtube"
@@ -267,7 +336,7 @@ export default function Home() {
                 
                 <div className="flex items-center justify-center gap-3 pt-1">
                   <a 
-                    href="https://github.com/erzapranata/hoax-classification" 
+                    href="https://github.com/erzapranata" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat source code di Github"
@@ -279,7 +348,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a 
-                    href="https://youtube.com/link-demo-anda" 
+                    href="https://youtube.com/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat demo video di Youtube"
@@ -326,7 +395,7 @@ export default function Home() {
               
                 <div className="flex items-center justify-center gap-3 pt-1">
                   <a 
-                    href="https://github.com/erzapranata/aes-file-security" 
+                    href="https://github.com/erzapranata/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat source code di Github"
@@ -338,7 +407,7 @@ export default function Home() {
                     </svg>
                   </a>
                   <a 
-                    href="https://github.com/erzapranata/aes-file-security" 
+                    href="https://github.com/erzapranata/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat sumber di Github"
@@ -396,18 +465,36 @@ export default function Home() {
                       Universitas Budi Luhur
                     </h3>
                     <p className="text-zinc-400 text-sm mt-1 font-light">
-                      S1 Teknik Informatika — <span className="text-purple-400 font-medium tracking-wide">GPA 3.76 / 4.00</span>
+                      S1 Teknik Informatika — <span className="text-purple-400 font-medium tracking-wide">IPK 3.76 / 4.00</span>
                     </p>
                   </div>
-                  <span className="text-xs font-mono text-zinc-500 bg-white/5 border border-white/5 px-2.5 py-1 rounded-md">
+                  <span className="text-xs font-mono text-zinc-500 bg-white/5 border border-white/5 hover:border-purple-500/30 px-2.5 py-1 rounded-md">
+                  
                     2021 — 2025
                   </span>
                 </div>
                 <div className="mt-4 flex flex-wrap gap-2 pt-3 border-t border-white/5">
-                  <span className="text-[11px] font-mono px-3 py-1 rounded-lg bg-purple-500/5 border border-purple-500/10 text-purple-300 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-purple-400" />
-                    Basic Computer Algorithm Competency (2023)
-                  </span>
+                  <a 
+                    href="/assets/ ERZA PRANATA RAMADHAN.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Lihat sertifikasi"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-purple-500/20 bg-purple-500/5 text-xs font-mono text-purple-300 hover:text-white hover:border-purple-500 hover:bg-purple-600 transition-all duration-300 transform active:scale-95"
+                  >
+                    <span>Basic Computer Algoritm Competency (2023)</span>
+                  </a>
+                    <a 
+                    href="/drive.google" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    title="Lihat sertifikasi lainnya"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-purple-500/20 bg-purple-500/5 text-xs font-mono text-purple-300 hover:text-white hover:border-purple-500 hover:bg-purple-600 transition-all duration-300 transform active:scale-95"
+                  >
+                    <span>Sertifikasi Lainnya</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -427,7 +514,7 @@ export default function Home() {
                       IPS / High School
                     </p>
                   </div>
-                  <span className="text-xs font-mono text-zinc-500 bg-white/5 border border-white/5 px-2.5 py-1 rounded-md">
+                  <span className="text-xs font-mono text-zinc-500 bg-white/5 border border-white/5 hover:border-purple-500/30 px-2.5 py-1 rounded-md">
                     2018 — 2021
                   </span>
                 </div>
