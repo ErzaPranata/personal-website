@@ -101,7 +101,7 @@ export default function Home() {
     "/projects/Management-RT/rt6.jpg",
     "/projects/Management-RT/rt7.jpg",
     "/projects/Management-RT/rt8.jpg"
-  ]
+  ];
 
   return (
     <div className="ambient-glow min-h-screen bg-[#030303] text-zinc-100 selection:bg-brand-purple/30 scroll-smooth relative overflow-hidden">
@@ -146,9 +146,8 @@ export default function Home() {
 
           <div className="space-y-6">
             
-            {/* CARD PROJECT: Core API Backend Rt */}
+            {/* CARD PROJECT: Backend Sistem Informasi Management RT */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
-              
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
                   <ImageSlider images={rtimg} />
@@ -159,7 +158,7 @@ export default function Home() {
                 
                 <div className="flex items-center justify-center gap-3 pt-1">
                   <a 
-                    href="https://https://https://github.com/ErzaPranata/Core-API-backend-rt" 
+                    href="https://github.com/ErzaPranata/Core-API-backend-rt" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat source code di Github"
@@ -188,26 +187,25 @@ export default function Home() {
               <div className="flex flex-col justify-between py-1 relative z-10 w-full">
                 <div>
                   <div className="flex justify-between items-center text-xs font-mono text-purple-400">
-                    <span>Personal Project</span>
+                    <span>Backend System / Enterprise REST API</span>
                     <span className="text-zinc-500">2026</span>
                   </div>
                   <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
-                    Management RT – Core Backend REST API Engine 
+                    Backend Sistem Informasi Management RT
                   </h3>
                   <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
-                    Management RT Core API adalah backend RESTful API performa tinggi yang dirancang sebagai pusat kendali (brain engine) untuk digitalisasi operasional lingkungan RT. Sistem ini dibangun menggunakan arsitektur clean code NestJS yang scalable, type-safe, dan terstruktur rapi untuk menangani seluruh logika bisnis administrasi warga, manajemen keuangan, hingga pos keamanan lingkungan secara terpusat.
+                    Sistem otentikasi terproteksi JWT & otorisasi bertingkat (RBAC) untuk 5 peran pengguna (Ketua RT, Bendahara, Sekretaris, Satpam, Warga). Mengembangkan API Kas RT multi-rekening, otomatisasi iuran, E-Visitor / Buku Tamu pos ronda, aduan warga realtime, polling voting, serta <em>Nuclear Reset System</em> terisolasi transactional query.
                   </p>
                 </div>
 
                 <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
-                  <span className="hover:text-purple-300 transition-colors">NestJS</span> • <span className="hover:text-purple-300 transition-colors">TypeScript</span> • <span className="hover:text-purple-300 transition-colors">Prisma ORM</span> • <span className="hover:text-purple-300 transition-colors">PostgreSQL</span> • <span className="hover:text-purple-300 transition-colors">Tailwind CSS</span> • <span className="hover:text-purple-300 transition-colors">JWT & Passport</span>• <span className="hover:text-purple-300 transition-colors">Swagger / OpenAPI</span>
+                  <span className="hover:text-purple-300 transition-colors">NestJS</span> • <span className="hover:text-purple-300 transition-colors">TypeScript</span> • <span className="hover:text-purple-300 transition-colors">Prisma ORM</span> • <span className="hover:text-purple-300 transition-colors">PostgreSQL</span> • <span className="hover:text-purple-300 transition-colors">JWT</span> • <span className="hover:text-purple-300 transition-colors">Swagger UI</span>
                 </div>
               </div>
             </div>
 
-            {/* CARD PROJECT: Management Store APP */}
+            {/* CARD PROJECT: Aplikasi Management Store / POS */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
-              
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
                   <ImageSlider images={posimg} />
@@ -218,7 +216,7 @@ export default function Home() {
                 
                 <div className="flex items-center justify-center gap-3 pt-1">
                   <a 
-                    href="https://https://github.com/ErzaPranata/Management-Store-App" 
+                    href="https://github.com/ErzaPranata/Management-Store-App" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat source code di Github"
@@ -247,26 +245,25 @@ export default function Home() {
               <div className="flex flex-col justify-between py-1 relative z-10 w-full">
                 <div>
                   <div className="flex justify-between items-center text-xs font-mono text-purple-400">
-                    <span>Personal Project</span>
+                    <span>Desktop App / Point of Sale</span>
                     <span className="text-zinc-500">2026</span>
                   </div>
                   <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
-                    Management Store App 
+                    Aplikasi Management Store / POS (Point of Sale)
                   </h3>
                   <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
-                    Aplikasi ini adalah proyek pribadi saya yang rencananya akan saya gunakan di masa depan ketika saya sudah memiliki toko ritel sendiri. Aplikasi ini menggunakan berbagai alat seperti Tauri, React, TypeScript, JavaScript, Tailwind CSS, dan basis data SQLite. 
+                    Aplikasi kasir & manajemen ritel berbasis Tauri. Dilengkapi keamanan RBAC, modul POS real-time dengan integrasi scanner barcode, antrean transaksi (Hold/Recall), pencetakan struk thermal otomatis, pencatatan akuntansi <em>data snapshotting</em>, serta dashboard analitik Recharts.
                   </p>
                 </div>
 
                 <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
-                  <span className="hover:text-purple-300 transition-colors">Tauri</span> • <span className="hover:text-purple-300 transition-colors">React</span> • <span className="hover:text-purple-300 transition-colors">Next.js</span> • <span className="hover:text-purple-300 transition-colors">Typescript</span> • <span className="hover:text-purple-300 transition-colors">Tailwind CSS</span> • <span className="hover:text-purple-300 transition-colors">Progressive Web App</span>
+                  <span className="hover:text-purple-300 transition-colors">React</span> • <span className="hover:text-purple-300 transition-colors">TypeScript</span> • <span className="hover:text-purple-300 transition-colors">Tauri</span> • <span className="hover:text-purple-300 transition-colors">SQLite</span> • <span className="hover:text-purple-300 transition-colors">Vite</span> • <span className="hover:text-purple-300 transition-colors">Recharts</span>
                 </div>
               </div>
             </div>
 
-            {/* CARD PROJECT: Personal Website */}
+            {/* CARD PROJECT: Personal Portfolio Website */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
-              
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
                   <ImageSlider images={pwimg} />
@@ -306,26 +303,25 @@ export default function Home() {
               <div className="flex flex-col justify-between py-1 relative z-10 w-full">
                 <div>
                   <div className="flex justify-between items-center text-xs font-mono text-purple-400">
-                    <span>Personal Website / Portofolio</span>
+                    <span>Personal Portfolio Website</span>
                     <span className="text-zinc-500">2026</span>
                   </div>
                   <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
-                    Personal Website
+                    Personal Portfolio Website
                   </h3>
                   <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
-                    Project sederhana Membuat personal website yang responsive menggunakan Node.js, Next.js, Typescript, dan Tailwind CSS 
+                    Situs web personal responsif sebagai wadah portofolio interaktif dan branding profesional. Mengintegrasikan galeri proyek, data riwayat interaktif, contact form langsung, serta optimasi SEO dan performa tinggi di berbagai perangkat.
                   </p>
                 </div>
 
                 <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
-                  <span className="hover:text-purple-300 transition-colors">Node.js</span> • <span className="hover:text-purple-300 transition-colors">Next.js</span> • <span className="hover:text-purple-300 transition-colors">Typescript</span> • <span className="hover:text-purple-300 transition-colors">Tailwind CSS</span> • <span className="hover:text-purple-300 transition-colors">Responsive Website</span>
+                  <span className="hover:text-purple-300 transition-colors">React</span> • <span className="hover:text-purple-300 transition-colors">Next.js</span> • <span className="hover:text-purple-300 transition-colors">Tailwind CSS</span> • <span className="hover:text-purple-300 transition-colors">TypeScript</span> • <span className="hover:text-purple-300 transition-colors">JavaScript</span>
                 </div>
               </div>
             </div>
 
             {/* CARD PROJECT: TUGAS AKHIR */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
-              
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
                   <ImageSlider images={taimg} />
@@ -365,26 +361,25 @@ export default function Home() {
               <div className="flex flex-col justify-between py-1 relative z-10 w-full">
                 <div>
                   <div className="flex justify-between items-center text-xs font-mono text-purple-400">
-                    <span>TUGAS AKHIR — DATA / TEXT MINING</span>
+                    <span>Tugas Akhir — Data / Text Mining</span>
                     <span className="text-zinc-500">2025</span>
                   </div>
                   <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
-                    Analisa Komparatif MNB & MLR untuk Klasifikasi Hoax Multi-Kategori Berbasis Desktop
+                    Analisa Komparatif MNB & MLR untuk Klasifikasi Hoax Multi-Kategori
                   </h3>
                   <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
-                    Merancang dan membuat aplikasi klasifikasi hoax multi-kategori menggunakan algoritma <em>Multinomial Naive Bayes</em> (Akurasi <strong>79.29%</strong>) dan <em>Multinomial Logistic Regression</em> (Akurasi <strong>77.14%</strong>). Sukses mengumpulkan <strong>2.100+ data berita nasional</strong> melalui metode <em>web scraping menggunakan Python</em> pada portal CNN, Kompas, dan Detik.
+                    Aplikasi klasifikasi hoax multi-kategori berbasis desktop. Berhasil mengumpulkan <strong>2.100+ data berita nasional</strong> via web scraping Python dari CNN, Kompas, Detik, & Turnbackhoax. Hasil akurasi algoritma Multinomial Naive Bayes mencapai <strong>79.29%</strong> dan Multinomial Logistic Regression mencapai <strong>77.14%</strong>.
                   </p>
                 </div>
 
                 <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
-                  <span className="hover:text-purple-300 transition-colors">Python</span> • <span className="hover:text-purple-300 transition-colors">Web Scraping</span> • <span className="hover:text-purple-300 transition-colors">Scikit-Learn</span> • <span className="hover:text-purple-300 transition-colors">Data Preprocessing</span>
+                  <span className="hover:text-purple-300 transition-colors">Python</span> • <span className="hover:text-purple-300 transition-colors">Web Scraping</span> • <span className="hover:text-purple-300 transition-colors">Scikit-Learn</span> • <span className="hover:text-purple-300 transition-colors">Preprocessing</span> • <span className="hover:text-purple-300 transition-colors">Text Mining</span>
                 </div>
               </div>
             </div>
 
             {/* CARD PROJECT: KKP */}
             <div className="rounded-3xl bg-[#0a0a0c]/80 backdrop-blur-sm border border-white/5 p-6 flex flex-col md:flex-row gap-8 hover:border-purple-500/20 hover:shadow-[0_10px_30px_rgba(168,85,247,0.04)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden shadow-2xl">
-              
               <div className="w-full md:w-[380px] flex flex-col gap-3 flex-shrink-0 relative z-10">
                 <div className="w-full h-[240px] rounded-2xl overflow-hidden border border-white/5 bg-[#121216] flex items-center justify-center shadow-inner">
                   <ImageSlider images={kkpimg} />
@@ -424,19 +419,19 @@ export default function Home() {
               <div className="flex flex-col justify-between py-1 relative z-10 w-full">
                 <div>
                   <div className="flex justify-between items-center text-xs font-mono text-purple-400">
-                    <span>KULIAH KERJA PRAKTIK — WEB & SECURITY</span>
+                    <span>Kuliah Kerja Praktik — Web & Security</span>
                     <span className="text-zinc-500">2024</span>
                   </div>
                   <h3 className="text-xl font-bold text-white mt-2 group-hover:text-purple-400 transition-colors duration-300">
-                    Pengamanan File Menggunakan Kriptografi Metode AES-128 Berbasis Web
+                    Pengamanan File Kriptografi Metode AES-128 Berbasis Web
                   </h3>
                   <p className="text-zinc-400 text-sm mt-3 leading-relaxed font-light">
-                    Merancang dan membangun aplikasi website untuk sistem keamanan berkas arsip perusahaan. Mengimplementasikan algoritma kriptografi kunci simetris AES-128 yang sukses mengeksekusi enkripsi file dan dekripsi file super cepat dengan waktu pemrosesan hanya <strong>0,36 detik</strong>.
+                    Sistem keamanan berkas berbasis web untuk PT. Karunia Laut Sejahtera. Mengimplementasikan algoritma kriptografi kunci simetris AES-128 yang sukses mengeksekusi enkripsi & dekripsi file secara presisi dengan waktu pemrosesan ultra cepat <strong>0,36 detik</strong>.
                   </p>
                 </div>
 
                 <div className="text-xs font-mono text-zinc-600 flex flex-wrap gap-2 mt-5 pt-3 border-t border-white/5">
-                  <span className="hover:text-purple-300 transition-colors">PHP</span> • <span className="hover:text-purple-300 transition-colors">SQL Database</span> • <span className="hover:text-purple-300 transition-colors">Cryptography</span> • <span className="hover:text-purple-300 transition-colors">Web Security</span>
+                  <span className="hover:text-purple-300 transition-colors">PHP</span> • <span className="hover:text-purple-300 transition-colors">SQL Database</span> • <span className="hover:text-purple-300 transition-colors">AES-128 Cryptography</span> • <span className="hover:text-purple-300 transition-colors">Web Security</span>
                 </div>
               </div>
             </div>
@@ -469,22 +464,24 @@ export default function Home() {
                     </p>
                   </div>
                   <span className="text-xs font-mono text-zinc-500 bg-white/5 border border-white/5 hover:border-purple-500/30 px-2.5 py-1 rounded-md">
-                  
                     2021 — 2025
                   </span>
                 </div>
                 <div className="mt-4 flex flex-wrap gap-2 pt-3 border-t border-white/5">
                   <a 
-                    href="/assets/ ERZA PRANATA RAMADHAN.pdf" 
+                    href="/assets/CV-Erza-Pranata-Ramadhan.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat sertifikasi"
                     className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-purple-500/20 bg-purple-500/5 text-xs font-mono text-purple-300 hover:text-white hover:border-purple-500 hover:bg-purple-600 transition-all duration-300 transform active:scale-95"
                   >
-                    <span>Basic Computer Algoritm Competency (2023)</span>
+                    <span>Basic Computer Algorithm Competency (2023)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
                   </a>
-                    <a 
-                    href="/drive.google" 
+                  <a 
+                    href="https://drive.google.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="Lihat sertifikasi lainnya"
@@ -550,28 +547,32 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="flex-get w-full space-y-5">
+            <div className="flex-1 w-full space-y-5">
               <ul className="text-zinc-400 text-sm space-y-3.5 font-light leading-relaxed">
                 <li className="flex items-start gap-3 group/item">
-                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▹</span>
+                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▸</span>
                   <span>Berperan aktif dalam diskusi tim terkait pemecahan masalah pada kegiatan Kuliah Kerja Nyata.</span>
                 </li>
                 <li className="flex items-start gap-3 group/item">
-                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▹</span>
-                  <span>Mampu membangun dan merawat hubungan baik dengan berbagai pemangku kepentingan, termasuk penanggung jawab desa, dosen pembimbing dan masyarakat umum selama Kuliah Kerja Nyata di Desa Dangdang, Cisauk.</span>
+                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▸</span>
+                  <span>Membangun dan merawat hubungan baik dengan berbagai pemangku kepentingan, termasuk penanggung jawab desa, dosen pembimbing dan masyarakat umum selama KKN di Desa Dangdang, Cisauk.</span>
                 </li>
                 <li className="flex items-start gap-3 group/item">
-                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▹</span>
+                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▸</span>
+                  <span>Menjalin kerja sama dengan Pengelola Bank Sampah Budi Luhur untuk mengadakan seminar <strong>“Pengenalan Bank Sampah”</strong> di Kantor Desa Dangdang.</span>
+                </li>
+                <li className="flex items-start gap-3 group/item">
+                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▸</span>
                   <span>Memobilisasi <strong>30 Ibu-ibu PKK</strong> Desa Dangdang sebagai audiens pemaparan materi <strong>“Pengenalan Bank Sampah”</strong> di Posyandu Rambutan, Desa Dangdang.</span>
                 </li>
                 <li className="flex items-start gap-3 group/item">
-                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▹</span>
-                  <span>Bertanggung jawab penuh atas manajemen komunikasi kelompok, dokumentasi digital, editing video, dan publikasi media sosial resmi.</span>
+                  <span className="text-purple-500 mt-0.5 flex-shrink-0 group-hover/item:translate-x-1 transition-transform duration-300">▸</span>
+                  <span>Mendokumentasikan, mengedit, dan mengunggah keseluruhan kegiatan Kuliah Kerja Nyata di Instagram resmi kelompok.</span>
                 </li>
               </ul>
               <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5 text-[11px] font-mono text-zinc-500">
-                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/5 hover:border-purple-500/30 transition-colors">Digital Mobilization</span>
-                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/5 hover:border-purple-500/30 transition-colors">Public Communication</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/5 hover:border-purple-500/30 transition-colors">Public Relations</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/5 hover:border-purple-500/30 transition-colors">Event Mobilization</span>
                 <span className="px-2 py-0.5 rounded bg-white/5 border border-white/5 hover:border-purple-500/30 transition-colors">Content Management</span>
               </div>
             </div>
@@ -595,17 +596,17 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="text-purple-400 font-mono text-xs font-bold">01 /</span>
-                    <h4 className="text-sm font-mono text-zinc-200 uppercase tracking-wider font-semibold">Data & AI Engineering</h4>
+                    <h4 className="text-sm font-mono text-zinc-200 uppercase tracking-wider font-semibold">Web & Frameworks</h4>
                   </div>
                 </div>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed mb-5">
-                  Mampu melakukan end-to-end data processing, ekstraksi informasi teks, hingga pembangunan model prediksi komparatif.
+                  Arsitektur web modern, sistem backend terproteksi JWT/RBAC, hingga pembuatan desktop app lintas platform.
                 </p>
                 <div className="space-y-4">
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Core Focus</span>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Frameworks & Stack</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {['Machine Learning', 'Text Mining', 'Data Scraping'].map((skill) => (
+                      {['Next.js', 'React', 'Node.js', 'NestJS', 'Prisma', 'Tauri', 'Laravel', 'Tailwind CSS'].map((skill) => (
                         <span key={skill} className="text-xs font-mono px-2.5 py-1 rounded-lg bg-purple-500/5 text-purple-300 border border-purple-500/20 shadow-sm transition-all duration-300 hover:border-purple-500/50 hover:text-white">
                           {skill} 
                         </span>
@@ -613,9 +614,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Libraries & Frameworks</span>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Database & API</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {['Scikit-Learn', 'Pandas', 'Seaborn'].map((skill) => (
+                      {['PostgreSQL', 'MySQL', 'SQLite', 'Swagger UI'].map((skill) => (
                         <span key={skill} className="text-xs font-mono px-2 py-0.5 rounded-md bg-white/5 text-zinc-400 border border-white/5 transition-colors hover:border-zinc-700 hover:text-zinc-200">
                           {skill}
                         </span>
@@ -633,17 +634,17 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="text-fuchsia-400 font-mono text-xs font-bold">02 /</span>
-                    <h4 className="text-sm font-mono text-zinc-200 uppercase tracking-wider font-semibold">Web Development</h4>
+                    <h4 className="text-sm font-mono text-zinc-200 uppercase tracking-wider font-semibold">Data & Security</h4>
                   </div>
                 </div>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed mb-5">
-                  Fokus pada pembuatan performa interface web yang responsif, arsitektur modular, serta implementasi enkripsi berkas yang aman.
+                  Ekstraksi data via web scraping Python, klasifikasi hoax Machine Learning, serta enkripsi kriptografi file.
                 </p>
                 <div className="space-y-4">
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Frameworks & Stack</span>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Core Competencies</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {['React.js', 'Next.js', 'Vite', 'Tailwind CSS'].map((skill) => (
+                      {['Machine Learning', 'Text Mining', 'Web Scraping', 'Data Analysis'].map((skill) => (
                         <span key={skill} className="text-xs font-mono px-2.5 py-1 rounded-lg bg-fuchsia-500/5 text-fuchsia-300 border border-fuchsia-500/20 shadow-sm transition-all duration-300 hover:border-fuchsia-500/50 hover:text-white">
                           {skill}
                         </span>
@@ -651,9 +652,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Security Integration</span>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Security & Libraries</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {['Web Security', 'AES-128 Crypt'].map((skill) => (
+                      {['Scikit-Learn', 'AES-128 Cryptography', 'Web Security'].map((skill) => (
                         <span key={skill} className="text-xs font-mono px-2 py-0.5 rounded-md bg-white/5 text-zinc-400 border border-white/5 transition-colors hover:border-zinc-700 hover:text-zinc-200">
                           {skill}
                         </span>
@@ -671,17 +672,17 @@ export default function Home() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <span className="text-violet-400 font-mono text-xs font-bold">03 /</span>
-                    <h4 className="text-sm font-mono text-zinc-200 uppercase tracking-wider font-semibold">Core & Utilities</h4>
+                    <h4 className="text-sm font-mono text-zinc-200 uppercase tracking-wider font-semibold">Languages & Tools</h4>
                   </div>
                 </div>
                 <p className="text-xs text-zinc-500 font-light leading-relaxed mb-5">
-                  Menguasai dasar logika algoritma pemrograman multi-paradigma dan manajemen basis data relasional untuk efisiensi sistem.
+                  Penguasaan bahasa pemrograman multi-paradigma serta software produktivitas, analisis data, dan desain grafis.
                 </p>
                 <div className="space-y-4">
                   <div>
                     <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Languages</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {['Python', 'SQL', 'PHP', 'Java'].map((skill) => (
+                      {['Python', 'Java', 'TypeScript', 'JavaScript', 'PHP', 'HTML', 'CSS', 'C/C++'].map((skill) => (
                         <span key={skill} className="text-xs font-mono px-2.5 py-1 rounded-lg bg-violet-500/5 text-violet-300 border border-violet-500/20 shadow-sm transition-all duration-300 hover:border-violet-500/50 hover:text-white">
                           {skill}
                         </span>
@@ -689,11 +690,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Office & Design Utilities</span>
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-600 block mb-2">Office & Creative Tools</span>
                     <div className="flex flex-wrap gap-1.5">
                       <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-white/5 text-zinc-400 border border-white/5 transition-colors hover:border-zinc-700 hover:text-zinc-200">VS Code</span>
-                      <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-white/5 text-zinc-400 border border-white/5 transition-colors hover:border-zinc-700 hover:text-zinc-200">Figma</span>
-                      <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20 shadow-sm font-medium transition-colors hover:border-purple-500/50">Microsoft Office</span>
+                      <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-white/5 text-zinc-400 border border-white/5 transition-colors hover:border-zinc-700 hover:text-zinc-200">MS Excel & Word</span>
+                      <span className="text-xs font-mono px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20 shadow-sm font-medium transition-colors hover:border-purple-500/50">Canva & Figma</span>
                     </div>
                   </div>
                 </div>
@@ -716,7 +717,7 @@ export default function Home() {
               {formStatus === "ERROR" && (
                 <div className="flex items-center gap-3 bg-rose-500/10 border border-rose-500/20 text-rose-400 px-5 py-3.5 rounded-xl shadow-2xl backdrop-blur-md animate-[slide-in_0.3s_ease-out] pointer-events-auto">
                   <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse flex-shrink-0" />
-                  <span className="text-xs font-mono font-medium tracking-wide">⚠ Gagal mengirim. Cek koneksi atau ID Formspree Anda.</span>
+                  <span className="text-xs font-mono font-medium tracking-wide">⚠️ Gagal mengirim. Cek koneksi atau ID Formspree Anda.</span>
                 </div>
               )}
             </div>,
@@ -749,7 +750,7 @@ export default function Home() {
                     : "bg-purple-500/10 text-purple-300 border border-purple-500/20 hover:bg-purple-600 hover:text-white"
                 }`}
               >
-                {copied ? "Copied! 📋" : "Copy ❐"}
+                {copied ? "Copied! 📋" : "Copy 📋"}
               </button>
             </div>
           </div>
