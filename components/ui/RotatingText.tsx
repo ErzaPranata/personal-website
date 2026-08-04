@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function RotatingText() {
-  const words = ["Web Developer", "Cyber Security", "Data Analyst", "Web Designer", "Graphic Design"];
+  const words = ["Web Developer", "Backend Developer", "Cyber Security", "Data Analyst", "Web Designer", "Graphic Design"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
