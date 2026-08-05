@@ -106,8 +106,8 @@ export default function Home() {
   ];
 
   const fadeUpVariant = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.1, ease: [0.22, 1, 0.36, 1] as const } }
+    hidden: { opacity: 0, y: 40, scale: 0.96 },
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const } }
   };
 
   return (
@@ -383,7 +383,7 @@ export default function Home() {
                     <span className="timeline-date">2021 — 2025</span>
                   </div>
                   <div className="timeline-actions">
-                    <a href="/assets/CV-Erza-Pranata-Ramadhan.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline-purple">
+                    <a href="/assets/ERZA-PRANATA-RAMADHAN.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline-purple">
                       <span>Basic Computer Algorithm Competency (2023)</span>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3.5 h-3.5 md:w-4 md:h-4"><path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
                     </a>

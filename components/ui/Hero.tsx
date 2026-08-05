@@ -1,14 +1,25 @@
 "use client";
 import RotatingText from "./RotatingText";
 import Counter from "./Counter";
-import { motion } from "framer-motion";
+import ScrambleText from "./ScrambleText";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Hero() {
+  const { scrollY } = useScroll();
+  
+  // Setup Parallax Physics
+  const bgY = useTransform(scrollY, [0, 1000], [0, 250]);
+  const contentY = useTransform(scrollY, [0, 1000], [0, -100]);
+  const visualY = useTransform(scrollY, [0, 1000], [0, -40]);
+
   return (
     <div className="hero-wrapper">
-      <div className="hero-bg-grid" />
+      {/* Background Parallax */}
+      <motion.div style={{ y: bgY }} className="hero-bg-grid" />
 
+      {/* Content Parallax */}
       <motion.div 
+        style={{ y: contentY }}
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -35,8 +46,8 @@ export default function Hero() {
           </div>
         </div>
         
-        <p className="hero-desc">
-          Lulusan S1 Teknik Informatika Universitas Budi Luhur (IPK 3.76) yang memiliki minat kuat pada bidang pengembangan web, backend developer, keamanan siber, analisis data dan desain grafis. Berpengalaman merancang aplikasi yang aman dan efisien melalui berbagai proyek nyata. Berbekal kemampuan belajar cepat dan dedikasi tinggi, saya siap berkontribusi menciptakan solusi teknologi yang bermanfaat bagi pertumbuhan perusahaan, serta tumbuh bersama tim profesional di perusahaan.
+        <p className="hero-desc min-h-[150px]">
+          <ScrambleText text="Lulusan S1 Teknik Informatika Universitas Budi Luhur (IPK 3.76) yang memiliki minat kuat pada bidang pengembangan web, backend developer, keamanan siber, analisis data dan desain grafis. Berpengalaman merancang aplikasi yang aman dan efisien melalui berbagai proyek nyata. Berbekal kemampuan belajar cepat dan dedikasi tinggi, saya siap berkontribusi menciptakan solusi teknologi yang bermanfaat bagi pertumbuhan perusahaan, serta tumbuh bersama tim profesional di perusahaan." />
         </p>
         
         <div className="hero-actions">
@@ -45,7 +56,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
           >
             <a 
-              href="/assets/CV-Erza-Pranata-Ramadhan.pdf" 
+              href="/assets/CV-Erza.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary group"
@@ -59,7 +70,9 @@ export default function Hero() {
         </div>
       </motion.div>
 
+      {/* Visual Parallax */}
       <motion.div 
+        style={{ y: visualY }}
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "backOut" }}

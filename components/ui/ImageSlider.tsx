@@ -39,8 +39,6 @@ export default function ImageSlider({ images }: ImageSliderProps) {
           }`}
         />
       ))}
-
-      {/* Lapisan Vignette Halus pada Gambar */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 
       {/* TOMBOL NAVIGASI MANUAL */}
@@ -65,8 +63,6 @@ export default function ImageSlider({ images }: ImageSliderProps) {
           </button>
         </>
       )}
-
-      {/* Indikator Dot Aktif */}
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-20">
         {images.map((_, index) => (
           <div 

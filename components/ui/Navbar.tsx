@@ -85,7 +85,7 @@ export default function Navbar() {
 
       <a 
         href="/assets/CV-Erza.pdf" 
-        download="CV-Erza-Pranata-Ramadhan.pdf"
+        download="CV-Erza.pdf"
         className="text-xs font-mono font-medium px-4 py-1.5 rounded-full bg-purple-600 hover:bg-purple-700 text-white shadow-lg shadow-purple-600/10 transition-colors"
       >
         CV ↓

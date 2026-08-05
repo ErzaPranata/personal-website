@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 interface CounterProps {
   target: number;
-  duration?: number; // dalam milidetik
-  decimals?: number; // jumlah angka di belakang koma
+  duration?: number;
+  decimals?: number;
 }
 
 export default function Counter({ target, duration = 2000, decimals = 0 }: CounterProps) {
@@ -17,14 +17,8 @@ export default function Counter({ target, duration = 2000, decimals = 0 }: Count
     const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = timestamp - startTime;
-
-      // Hitung persentase progress animasi (maksimal 1)
-      const progressRatio = Math.min(progress / duration, 1);
-      
-      // Efek easing out kuadratis agar melambat mulus di akhir gerakan
+      const progressRatio = Math.min(progress / duration, 1);      
       const easeOutQuad = progressRatio * (2 - progressRatio);
-
-      // Hitung nilai saat ini berdasarkan efek easing
       const currentValue = easeOutQuad * target;
       setCount(currentValue);
 
