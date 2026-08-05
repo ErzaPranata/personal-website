@@ -40,7 +40,6 @@ export default function Hero() {
         </p>
         
         <div className="hero-actions">
-          {/* PERUBAHAN: Menggunakan motion.div untuk membungkus anchor tag */}
           <motion.div 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

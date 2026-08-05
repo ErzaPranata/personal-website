@@ -44,13 +44,12 @@ export default function Navbar() {
     };
   }, []);
 
-  // PERUBAHAN: Memanfaatkan window.scrollTo agar diambil alih oleh mesin Lenis Smooth Scroll
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       const elementPosition = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
-        top: elementPosition - 100, // Memberikan offset navbar
+        top: elementPosition - 100,
         behavior: "smooth"
       });
     }
